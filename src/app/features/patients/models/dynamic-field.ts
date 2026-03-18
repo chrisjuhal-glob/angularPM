@@ -1,5 +1,5 @@
 export interface DynamicField {
-  type: 'text' | 'number' | 'email';
+  type: 'text' | 'number' | 'email' | 'textArea';
   name: string;
   label: string;
   value?: any;
