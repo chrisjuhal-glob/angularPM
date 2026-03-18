@@ -12,6 +12,9 @@ import { CardModule } from 'primeng/card';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { TextAreaComponent } from './features/patients/components/text-area/text-area.component';
+import { ImageModule } from 'primeng/image';
+import { DividerModule } from 'primeng/divider';
+import { MenubarModule } from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,7 @@ import { TextAreaComponent } from './features/patients/components/text-area/text
     TextFieldComponent,
     NumberFieldComponent,
     EmailFieldComponent,
-    TextAreaComponent
+    TextAreaComponent,
   ],
   imports: [
     CommonModule,
@@ -30,7 +33,16 @@ import { TextAreaComponent } from './features/patients/components/text-area/text
     InputTextareaModule,
     ButtonModule,
     CardModule,
+    ImageModule,
+    DividerModule,
+    MenubarModule,
   ],
-  exports: [DynamicFormComponent],
+  exports: [
+    DynamicFormComponent,
+    CardModule,
+    ImageModule,
+    DividerModule,
+    MenubarModule,
+  ],
 })
 export class SharedModule {}

@@ -8,7 +8,7 @@ import { COMPONENT_MAPPER } from '../../models/mapper';
   selector: 'app-dynamic-form',
   template: `
     <form [formGroup]="form" (ngSubmit)="submit()">
-      <p-card header="Paciente {{ patient }}">
+      <p-card header="Agregar paciente {{ patient }}">
         <ng-template dynamicField pTemplate="header"></ng-template>
 
         <ng-template pTemplate="footer">
